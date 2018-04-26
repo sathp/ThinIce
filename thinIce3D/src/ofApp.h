@@ -2,7 +2,32 @@
 
 #include "ofMain.h"
 
+namespace thinice {
+
+enum GameState {
+	RUNNING,
+	PAUSED,
+	FINISHED_LEVEL
+}
 class ofApp : public ofBaseApp{
+
+	private:
+		// Game Objects
+		GameState current_state_ = RUNNING;
+		ThinIce game;
+		
+		// Basic Display Functions
+		void drawLevel();
+		void drawSprite();
+		void drawGameOver();
+		void drawInfo();
+
+		// Additional Functions
+		void drownSprite();
+		void restartLevel();
+
+		// Reset Game
+		void reset()
 
 	public:
 		void setup();
@@ -10,15 +35,9 @@ class ofApp : public ofBaseApp{
 		void draw();
 
 		void keyPressed(int key);
-		void keyReleased(int key);
-		void mouseMoved(int x, int y );
-		void mouseDragged(int x, int y, int button);
-		void mousePressed(int x, int y, int button);
-		void mouseReleased(int x, int y, int button);
-		void mouseEntered(int x, int y);
-		void mouseExited(int x, int y);
 		void windowResized(int w, int h);
-		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 		
 };
+
+}
