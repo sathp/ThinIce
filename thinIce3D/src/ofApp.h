@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
+#include "thinIce.h"
 
 namespace thinice {
 
@@ -8,7 +9,8 @@ enum GameState {
 	RUNNING,
 	PAUSED,
 	FINISHED_LEVEL
-}
+};
+    
 class ofApp : public ofBaseApp{
 
 	private:
@@ -25,9 +27,9 @@ class ofApp : public ofBaseApp{
 		// Additional Functions
 		void drownSprite();
 		void restartLevel();
-
+    
 		// Reset Game
-		void reset()
+    void reset();
 
 	public:
 		void setup();
@@ -37,7 +39,8 @@ class ofApp : public ofBaseApp{
 		void keyPressed(int key);
 		void windowResized(int w, int h);
 		void gotMessage(ofMessage msg);
-		
+	
+    ofImage block;
 };
 
 }

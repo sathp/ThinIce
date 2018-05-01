@@ -1,3 +1,6 @@
+#ifndef ICEBLOCK_H
+#define ICEBLOCK_H
+
 namespace thinice {
 
     // Internal Block
@@ -19,3 +22,5 @@ namespace thinice {
         void melt(); // Melts block, decreases State value by 1
     };
 }
+
+#endif

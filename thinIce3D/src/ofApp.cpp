@@ -1,71 +1,36 @@
 #include "ofApp.h"
 
 //--------------------------------------------------------------
-void ofApp::setup(){
+void thinice::ofApp::setup(){
     ofSetWindowTitle("Thin Ice");
+    block.load("blocks/starwars.jpg");
 }
 
 //--------------------------------------------------------------
-void ofApp::update(){
+void thinice::ofApp::update(){
 
 }
 
 //--------------------------------------------------------------
-void ofApp::draw(){
+void thinice::ofApp::draw(){
+    block.draw(ofGetWidth()/2 - block.getWidth()/2, ofGetHeight()/2 - block.getHeight()/2);
     
 }
 
 //--------------------------------------------------------------
-void ofApp::keyPressed(int key){
+void thinice::ofApp::keyPressed(int key){
+    if (key == '1') {
+        block.draw(100, 0);
+    }
+}
+
+
+//--------------------------------------------------------------
+void thinice::ofApp::windowResized(int w, int h){
 
 }
 
 //--------------------------------------------------------------
-void ofApp::keyReleased(int key){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseMoved(int x, int y ){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseDragged(int x, int y, int button){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mousePressed(int x, int y, int button){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseReleased(int x, int y, int button){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseEntered(int x, int y){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseExited(int x, int y){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::windowResized(int w, int h){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::gotMessage(ofMessage msg){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::dragEvent(ofDragInfo dragInfo){ 
+void thinice::ofApp::gotMessage(ofMessage msg){
 
 }
