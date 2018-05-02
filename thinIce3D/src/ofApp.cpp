@@ -2,8 +2,8 @@
 
 //--------------------------------------------------------------
 void thinice::ofApp::setup(){
-    ofSetWindowTitle("Thin Ice");
-    block.load("blocks/starwars.jpg");
+    Block test = Block(1, 1, 1);
+    test.setup();
 }
 
 //--------------------------------------------------------------
@@ -13,15 +13,12 @@ void thinice::ofApp::update(){
 
 //--------------------------------------------------------------
 void thinice::ofApp::draw(){
-    block.draw(ofGetWidth()/2 - block.getWidth()/2, ofGetHeight()/2 - block.getHeight()/2);
-    
+    test.draw();
 }
 
 //--------------------------------------------------------------
 void thinice::ofApp::keyPressed(int key){
-    if (key == '1') {
-        block.draw(100, 0);
-    }
+
 }
 
 

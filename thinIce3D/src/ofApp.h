@@ -1,7 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
-#include "thinIce.h"
+#include "block.h"
 
 namespace thinice {
 
