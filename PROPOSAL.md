@@ -1,5 +1,5 @@
 # Project Proposal - Thin Ice
-This project will aim to build a 3D-version of an arcade game, Thin Ice, that was once offered as a part of the Club Penguin experience.
+This project will aim to build an arcade game, Thin Ice, that was once offered as a part of the Club Penguin experience.
 
 ![](https://vignette.wikia.nocookie.net/clubpenguin/images/0/09/Thin_Ice_game.PNG/revision/latest?cb=20090503123935) 
 ## Objective of the Game
@@ -17,9 +17,8 @@ This game is going to be built in C++ and will make use of the following librari
 
 1. [OpenFrameworks](https://github.com/openframeworks/openFrameworks)
 2. OpenFrameworks Wrapper for Box2D by [Vanderlin](https://github.com/vanderlin) found [here](https://github.com/vanderlin/ofxBox2d). 
-3. [Torque3D Game Engine](https://github.com/GarageGames/Torque3D)
 
-## Milestones
+## Milestones (Deprecated)
 
 1. Establishing a 3D Environment
 2. Designing Sprites, Components and Environmnet Objects

@@ -3,5 +3,6 @@ Final Project for CS 126: Software Design Studio by [Sathwik Pochampally](http:/
 
 University of Illinois at Urbana-Champaign netID: **sathwik2**
 
-**Title**: Thin Ice 3D
+**Title**: Thin Ice
+
 **Project Proposal**: "/PROPOSAL.md"
